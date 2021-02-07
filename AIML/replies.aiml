@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>REPLY STARTADVISE</pattern>
+	    <template>
+	        <reply>
+                <text>Start advise</text>
+                <postback>X STARTADVISE</postback>
+            </reply>
+	    </template>
+    </category>
+    <category>
+        <pattern>REPLY WHOAREYOU</pattern>
+        <template>
+            <reply>
+                <text>Who are you?</text>
+                <postback>X WHOAREYOU</postback>
+            </reply>
+        </template>
+    </category>
+</aiml>

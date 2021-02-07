@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <condition name="name">
+                <li value="unknown">Let me help you!</li>
+                <li><get name="name" />, let me help you!</li>
+            </condition>
+            <reply>
+                <text>Start advise</text>
+                <postback>X STARTADVISE</postback>
+            </reply>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>  
+        <pattern>HELLO ^</pattern>
+        <template><srai>X WELCOME <star /></srai></template>
+    </category>
+    <category>  
+        <pattern>MY NAME IS *</pattern>
+        <template><srai>X WELCOME <star /></srai></template>
+    </category>
+    <category>  
+        <pattern>WHO ARE YOU</pattern>
+        <template><srai>X WHOAREYOU</srai></template>
+    </category>
+    
+    <!-- Reusable -->
+    <category>
+        <pattern>X WELCOME *</pattern>
+        <template>
+            <think>
+                <set var="star"><star /></set>
+                <condition var="star">
+                    <li value="unknown"></li>
+                    <li><set name="name"><star /></set></li>
+                </condition>
+            </think>
+            <condition name="name">
+                <li value="unknown">Hello, </li>
+                <li>Hi <get name="name" />, </li>
+            </condition>
+            what can I help you with?
+            <srai>REPLY STARTADVISE</srai>
+            <srai>REPLY WHOAREYOU</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>X WHOAREYOU</pattern>
+        <template>
+            <condition name="name">
+                <li value="unknown"></li>
+                <li>Hi, <get name="name" />. </li>
+            </condition>
+            I am the Advisor Bot.
+        </template>
+    </category>
+</aiml>

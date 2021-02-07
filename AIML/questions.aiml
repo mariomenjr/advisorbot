@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>Q RUGOODATMATH</pattern>
+	    <template>
+	        <delay>2</delay>
+	        Are you a Math savvy?
+	        <button>
+                <text>YES</text>
+                <postback>Q IAMLONELYWOLF</postback>
+            </button>
+            <button>
+                <text>NO</text>
+                <postback>Q PEOPLEPERSON</postback>
+            </button>
+	    </template>
+    </category>
+    <category>
+	    <pattern>Q IAMLONELYWOLF</pattern>
+	    <template>
+	        <delay>2</delay>
+	        I see. Are you a lonely wolf or do you enjoy working in a team?
+	        <button>
+                <text>Lonely wolf</text>
+                <postback>Q ICOMMONPRACTICES</postback>
+            </button>
+            <button>
+                <text>Working in a team</text>
+                <postback>Q CODEORDB</postback>
+            </button>
+	    </template>
+    </category>
+    <category>
+	    <pattern>Q ICOMMONPRACTICES</pattern>
+	    <template>
+	        <delay>2</delay>
+	        Next. For you, are common best practices the rule or you can adapt them to the situation?
+	        <button>
+                <text>They're the rules</text>
+                <postback>J QAENGINEER</postback>
+            </button>
+            <button>
+                <text>Adapt them based on situation</text>
+                <postback>J DATAANALYST</postback>
+            </button>
+	    </template>
+    </category>
+    <category>
+	    <pattern>Q CODEORDB</pattern>
+	    <template>
+	        <delay>2</delay>
+	        Fantastic. Do you really like to write code?
+	        <button>
+                <text>Write code? Of course!</text>
+                <postback>J SOFTWAREENGINEER</postback>
+            </button>
+            <button>
+                <text>When I have to!</text>
+                <postback>J DBA</postback>
+            </button>
+	    </template>
+    </category>
+    <category>
+	    <pattern>Q PEOPLEPERSON</pattern>
+	    <template>
+	        <delay>2</delay>
+	        It's ok, me neither. Are you a people's person?
+	        <button>
+                <text>All the time!</text>
+                <postback>J PROJECTMGR</postback>
+            </button>
+            <button>
+                <text>Not really!</text>
+                <postback>J QAENGINEER</postback>
+            </button>
+	    </template>
+    </category>
+</aiml>

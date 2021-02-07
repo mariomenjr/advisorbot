@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>X CONGRATS</pattern>
+        <template>
+            Congratulations! Based on your answers, I suggest that you start your career as
+        </template>
+    </category>
+	<category>
+	    <pattern>J SOFTWAREENGINEER</pattern>
+	    <template>
+	        <delay>3</delay>
+	        <srai>X CONGRATS</srai> a Software Engineer!
+	    </template>
+    </category>
+    <category>
+	    <pattern>J QAENGINEER</pattern>
+	    <template>
+	        <delay>3</delay>
+	        <srai>X CONGRATS</srai> a Quality Assurance Engineer!
+	    </template>
+    </category>
+    <category>
+	    <pattern>J DATAANALYST</pattern>
+	    <template>
+	        <delay>3</delay>
+	        <srai>X CONGRATS</srai> a Data Analyst!
+	    </template>
+    </category>
+    <category>
+	    <pattern>J PROJECTMGR</pattern>
+	    <template>
+	        <delay>3</delay>
+	        <srai>X CONGRATS</srai> a Project Manager!
+	    </template>
+    </category>
+    <category>
+	    <pattern>J DBA</pattern>
+	    <template>
+	        <delay>3</delay>
+	        <srai>X CONGRATS</srai> a Database Administrator!
+	    </template>
+    </category>
+</aiml>

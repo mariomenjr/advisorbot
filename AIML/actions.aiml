@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>X STARTADVISE</pattern>
+        <template>
+            Great! I need to ask you some questions to find which Job Type is adequate for you. Should we proceed?
+            <button>
+                <text>YES</text>
+                <postback>X START YES</postback>
+            </button>
+            <button>
+                <text>NO</text>
+                <postback>X START NO</postback>
+            </button>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>X START YES</pattern>
+        <template>
+            Good, let's begin!
+            <srai>Q RUGOODATMATH</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>X START NO</pattern>
+        <template>
+            Hola NO
+        </template>
+    </category>
+</aiml>
